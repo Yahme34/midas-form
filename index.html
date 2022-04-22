@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Midas Academy Entry Form</title>
+            <link rel="stylesheet" href="./form.css">
+        </head>
+        <body>
+            <h1 id="Js"></h1>
+            <h1 style="color: blue;" id="heading">MIDAS ACADEMY</h1> 
+            <form action="contactform.php" method="post">
+                <div class="top_container">  
+                    <label class="input">
+                        Name: <input class="container" type="text" name="Name" placeholder="Write your name">
+                    </label>
+                    <label>
+                        Email Address: <input type="email" name="email" placeholder="Write your email">
+                    </label>
+                    <label>    
+                        Date of Birth: <input type="date" name="Date of birth" placeholder="mm/dd/yyyy">
+                     </label>
+                    <label>
+                        What class are you?
+                    </label>
+                    <select name="class" id="class">
+                        <option value="JSSI">JSS1</option>
+                        <option value="JSS2">JSS2</option>
+                        <option value="JSS3">JSS3</option>
+                        <option value="SSS1">SSS1</option>
+                        <option value="SSS2">SSS2</option>
+                        <option value="SSS3">SSS3</option>
+                    </select>
+                </div>
+                <div class="bottom_contauner">
+                    <label>Would you recommend Midas Academy to anyone?</label>
+                    <label>
+                        Yes
+                        <input type="radio" name="recommendation">
+                    </label>
+                    <label>
+                        No
+                        <input type="radio" name="recommendation">
+                    </label>
+                    <label>What would you like to study?</label>
+                    <input type="checkbox" name="scratch">scratch
+                    <input type="checkbox" name="html">html
+                    <input type="checkbox" name="css">css
+                    <input type="checkbox" name="java script">java script
+                    <textarea name="message" placeholder="Any comment or Suggestion"></textarea>
+                </div>
+            </form>
+            <script src="index.js"></script>
+        </body>
+    </html>
